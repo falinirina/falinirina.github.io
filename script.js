@@ -119,22 +119,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Progress bars animation
-function animateProgressBars() {
-    const progressBars = document.querySelectorAll('.progress-bar');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.width = entry.target.parentElement.parentElement.querySelector('.skill-bar').dataset.width || entry.target.style.width;
-            }
-        });
-    });
-
-    progressBars.forEach(bar => observer.observe(bar));
-}
+// Progress bars animation - Dépréciée (barres de progression supprimées)
 
 // Call on page load
-window.addEventListener('load', animateProgressBars);
+window.addEventListener('load', () => {
+    // Animations chargées automatiquement par AOS
+});
 
 console.log('Portfolio script loaded successfully!');
