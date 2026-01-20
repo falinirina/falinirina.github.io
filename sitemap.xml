@@ -4,4 +4,12 @@
     <loc>https://falinirina.com/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://falinirina.com/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://falinirina.com/contact</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
